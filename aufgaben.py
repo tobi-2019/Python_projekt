@@ -1,19 +1,26 @@
-# Werte 
+# Importieren von Modulen
+import random
 
-a = 5
-b = 3
+# Modul config
+random.seed
+
+# Erstellen der Variablen
+a = random.randint(1,10)
+b = random.randint(1,10)
 c = a + b
 
+# Anzeige
+print("Die Aufgabe:", a, "+", b, "=", "?")
 
-# Ausgabe
+# Input
+x = input()
+y = int(x)
 
-print("Die Aufgabe :", a, "+", b)
-print("Bitte eine Zahl eingeben")
-
-z = input()
-zahl = int(z)
-
-print("Ihre Eingabe:", z)
-print("Das Ergebniss:", c)
-
+# Überprüfung
+if y == c:
+    print("Das Ergebniss ist Richtig")
+else:
+    print("Ihre Eingabe ist leider Falsch")
+    print("Das Ergebniss ist:", c)
+    
 

@@ -45,3 +45,4 @@ elif fam == ü and b < 4000:
     print("Sie Zahlen 22% Steuern, es ergibt sich eine Steuer von", u, "Euro")
 else:
     print("Es ist ein Fehler augetreten")
+print ("Rechnug Beendet!")

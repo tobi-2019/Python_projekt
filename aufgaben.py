@@ -18,9 +18,15 @@ y = int(x)
 
 # Überprüfung
 if y == c:
-    print("Das Ergebniss ist Richtig")
+    print("Das Ergebnis ist Richtig")
+elif y < 0 or y > 100:
+    print("Das Ergebnis ist ganz Falsch")
+    print("Das Ergebnis:", c)
+elif c-1 <= y <= c+1:
+    print("Das war fast richtig")
+    print("Das Ergebnis ist:", c)
 else:
     print("Ihre Eingabe ist leider Falsch")
-    print("Das Ergebniss ist:", c)
+    print("Das Ergebnis ist:", c)
     
 

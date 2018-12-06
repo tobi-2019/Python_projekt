@@ -1,11 +1,16 @@
 # Erstellen der Schleife
-zahl = 1
+fehler = 1
+um = 2.54
 
-while zahl != 0:
+while fehler == 1:
     print("Bitte einen beliebigen inch wert eingeben der in cm umgrechnet werden soll")
     inzahl = input()
-    zahl = int(inzahl)
-    um = 2.54
-    fertig = um*zahl
-    print(zahl, "inch sind", fertig, "cm")
+    try:
+        zahl = int(inzahl)
+        fertig = um*zahl
+        print(zahl, "inch sind", fertig, "cm")
+        fehler = 0
+    except:
+        print("Geben sie bitte eine ganze Zahl ein")
+
 print("Ende")
